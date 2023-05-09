@@ -11,3 +11,6 @@
                 @{n='Size(GB)';e={$_.Size/1gb -as [int]}},
                 @{n='Free(GB)';e={$_.Freespace/1gb -as [int]}}
         }
+
+
+     Get-DiskInfo -ComputerName dc -OutVariable var  # <--puts into var 
