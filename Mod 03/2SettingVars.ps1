@@ -5,7 +5,7 @@ Get-WmiObject -class Win32_logicalDisk -Filter "DeviceID='$Drive'" -computerName
 Get-WmiObject -class 
 #Parameterization of a script varibles
 param (
-    [String]$ComputerName= 'LAPTOP-J9NMNVGL',
+    [String]$ComputerName='localhost',
     [String]$Drive='C:'
 )
 Get-WmiObject -class Win32_logicalDisk -Filter "DeviceID='$Drive'" -computerName $ComputerName
